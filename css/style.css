@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 body, html{
     width: 100%;
     height: 100%;
@@ -6,8 +13,13 @@ body, html{
 .header-block{
     /* max-width: 2500px; */
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 0 auto;
 }
 .burger-bar{
@@ -32,6 +44,8 @@ body, html{
     opacity: 60%;
 }
 .ul-block{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .nav-container{
@@ -39,8 +53,11 @@ body, html{
     width: 100%;
     position: absolute;
     top: 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content:space-around;
+    -ms-flex-pack:distribute;
+        justify-content:space-around;
     font-family: 'Comfortaa';
     text-transform: uppercase;
     font-weight: 800;
@@ -63,6 +80,8 @@ body, html{
     top: 20%;
     left: 10%;
     font-size: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     color: white;
     font-family: 'Comfortaa';
@@ -75,6 +94,8 @@ body, html{
     color: white;
     font-weight: 800;
     font-size: 14px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-family: 'Comfortaa';
 }
@@ -143,8 +164,12 @@ body, html{
     max-width: 1088px;
     width: 100%;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .form-left-block{
     max-width: 730px;
@@ -180,6 +205,22 @@ body, html{
 .button-block:focus{
     outline: none;
 }
+.input-block::-webkit-input-placeholder, .describe-textarea::-webkit-input-placeholder{
+    font-family: 'Comfortaa';
+    font-size: 15px;
+}
+.input-block::-moz-placeholder, .describe-textarea::-moz-placeholder{
+    font-family: 'Comfortaa';
+    font-size: 15px;
+}
+.input-block:-ms-input-placeholder, .describe-textarea:-ms-input-placeholder{
+    font-family: 'Comfortaa';
+    font-size: 15px;
+}
+.input-block::-ms-input-placeholder, .describe-textarea::-ms-input-placeholder{
+    font-family: 'Comfortaa';
+    font-size: 15px;
+}
 .middle-block,
 .input-block::placeholder,
 .describe-textarea::placeholder{
@@ -210,8 +251,12 @@ body, html{
     max-width: 1088px;
     width: 100%;
     margin: 30px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     text-align: center;
 }
 .icon-block{
@@ -220,17 +265,32 @@ body, html{
     max-width: 50px;
     width: 100%;
     height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-radius: 50%;
     margin-bottom: 20px;
 }
 .info-block{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-family: 'Comfortaa';
 }
 .contact-title{
@@ -241,14 +301,19 @@ body, html{
 /* 3image block */
 .three-pic-block{
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .img1:hover,
 .img2:hover,
 .img3:hover{
     opacity: 100%;
-    box-shadow: 8px 10px 15px rgb(179, 179, 179);
+    -webkit-box-shadow: 8px 10px 15px rgb(179, 179, 179);
+            box-shadow: 8px 10px 15px rgb(179, 179, 179);
 }
 .img1,
 .img2,
@@ -299,23 +364,33 @@ body, html{
     background-color: #DC4E41;
 }
 .social-icons{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
 }
 .footer-block{
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     background-color: black;
     font-family: 'Comfortaa';
 }
 .footer-right-block{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     color: white;
     max-width: 1000px;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     margin-top: 30px;
     margin-bottom: 100px;
 }
@@ -352,8 +427,12 @@ body, html{
 }
 .footer-copyright{
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     font-family: 'Comfortaa';
     color: white;
     position: absolute;
