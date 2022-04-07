@@ -77,27 +77,27 @@ body, html{
 }
 .contact-block{
     position: absolute;
-    top: 20%;
-    left: 10%;
+    width: 80%;
+    top: 30%;
     font-size: 25px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     color: white;
     font-family: 'Comfortaa';
     font-weight: 900;
 }
-.contact-block-1 {
-    position: absolute;
-    top: 25%;
-    left: 10%;
-    color: white;
+.contact-block-menu {
+    display: flex;
+    margin-top: 15px;
     font-weight: 800;
     font-size: 14px;
-    display: -webkit-box;
-    display: -ms-flexbox;
+}
+.contact-block-container{
     display: flex;
-    font-family: 'Comfortaa';
+    justify-content: space-around;
 }
 .wraper{
     height: 15px;
